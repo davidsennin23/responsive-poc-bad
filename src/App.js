@@ -3,6 +3,7 @@ import './App.css';
 import MainPage from './components/MainPage';
 import {buildApp} from './app/AppBuilder';
 import {BrowserRouter as Router} from 'react-router-dom';
+import makeTheme from './components/theme/makeTheme';
 
 function App() {
   return (
@@ -12,4 +13,4 @@ function App() {
   );
 }
 
-export default buildApp(App);
+export default makeTheme(buildApp(App));

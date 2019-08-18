@@ -1,21 +1,6 @@
 import React from 'react';
 
-const theme = {
-    colors: {
-        mainColor: '',
-        secondaryColor: '',
-    },
-    fontStyles: {
-
-    },
-    fontSize: {
-        
-    }
-}
-
 class App {
-
-    getTheme = () => theme;
 
 }
 

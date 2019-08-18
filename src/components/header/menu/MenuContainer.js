@@ -13,7 +13,7 @@ const MobileContainer = styled(Column)`
 const DesktopContainer = styled(Column)`
     position: relative;
     background-color: gray;
-    float: left;
+    float: right;
     min-height: 1px;
 `;
 

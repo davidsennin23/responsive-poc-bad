@@ -3,10 +3,13 @@ import styled from 'styled-components';
 
 const commonTemplateStyle = `
     width: 100vw;
-    padding: 10px 25px;
+    padding: 0px 25px;
 `;
 
-const HeaderTemplate = styled.header`${commonTemplateStyle}`;
+const HeaderTemplate = styled.header`
+    ${commonTemplateStyle};
+    background-color: ${({theme}) => theme.colors.mainColor};
+`;
 const BodyTemplate = styled.main`
     ${commonTemplateStyle}
 `;
