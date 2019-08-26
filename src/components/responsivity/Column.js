@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const getWidth = (span) => {
+    console.log(span)
     span = span || 1;
-    console.log(span);
     const width = (100/12) * span;
     return width;
 }

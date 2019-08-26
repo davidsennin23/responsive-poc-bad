@@ -1,6 +1,36 @@
 import React from 'react';
 
+const commonStyles = {
+
+    container: `
+        min-height: 1px;
+        max-width: 1200px;
+        padding: 10px;
+        margin: 0 auto;
+    `,
+
+    clearFix: `
+        &:before,
+        &:after {
+            content: " ";
+            display: table;
+        }
+        &:after {
+            clear: both;
+        }    
+    `,
+
+}
+
 class App {
+
+    get commonStyles() {
+        return commonStyles;
+    }
+
+    isMobile(width) {
+        return width <= 768;
+    }
 
 }
 
@@ -12,7 +42,7 @@ const buildApp = (App) =>
 
         render() {
             return (
-                <AppContext.Provider app={app}>
+                <AppContext.Provider value={app}>
                     <App/>
                 </AppContext.Provider>
             )
@@ -21,5 +51,6 @@ const buildApp = (App) =>
     }
 
 export {
-    buildApp
+    buildApp,
+    AppContext
 }

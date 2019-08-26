@@ -4,17 +4,42 @@ import MenuItem from './items/MenuItem';
 import ItemLink from './items/ItemLink';
 import ItemText from './items/ItemText'
 
-const Nav = styled.nav`
+const Ul = styled.ul`
+    display: flex;
+    margin: 10px;
+    justify-content: center;
 `;
 
+// const Menu = () =>
+//     <Nav>
+//         <Men>
+            // <MenuItem>
+            //     <ItemLink to={"/"}>
+            //         <ItemText>Home</ItemText>
+            //     </ItemLink>
+            // </MenuItem>
+            // <MenuItem>
+            //     <ItemLink to={"/meal-list"}>
+            //         <ItemText>Meal List</ItemText>
+            //     </ItemLink>
+            // </MenuItem>
+//         </Men>
+//     </Nav>
+
 const Menu = () =>
-    <Nav>
+    <Ul>
         <MenuItem>
             <ItemLink to={"/"}>
                 <ItemText>Home</ItemText>
             </ItemLink>
         </MenuItem>
-    </Nav>
+        <MenuItem>
+            <ItemLink to={"/meal-list"}>
+                <ItemText>Meal List</ItemText>
+            </ItemLink>
+        </MenuItem>
+
+    </Ul>
 
 export default Menu;
     

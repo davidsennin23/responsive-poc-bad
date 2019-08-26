@@ -22,7 +22,7 @@ const ScreenWidthTracker = (Component) =>
         }
 
         render() {
-            return <Component width={this.state.width}/>
+            return <Component width={this.state.width} {...this.props}/>
         }
 
     }
